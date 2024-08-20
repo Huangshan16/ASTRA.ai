@@ -1,0 +1,49 @@
+{
+  "type": "extension",
+  "name": "reecho_tts",
+  "version": "0.1.0",
+  "dependencies": [
+    {
+      "type": "system",
+      "name": "ten_runtime_python",
+      "version": "0.1.0"
+    },
+    {
+      "type": "pip",
+      "name": "requests",
+      "version": "2.26.0"
+    }
+  ],
+  "package": {
+    "include": [
+      "manifest.json",
+      "property.json",
+      "BUILD.gn",
+      "**.tent",
+      "**.py",
+      "src/**.tent",
+      "src/**.py",
+      "README.md"
+    ]
+  },
+  "api": {
+    "commands": [
+      {
+        "name": "generate_tts",
+        "description": "Generate text-to-speech audio using Reecho API"
+      }
+    ]
+  },
+  "configs": {
+    "api_url": {
+      "type": "string",
+      "default": "https://v1.reecho.cn/api/tts/simple-generate",
+      "description": "Reecho TTS API URL"
+    },
+    "api_key": {
+      "type": "string",
+      "default": "sk-b71481e4d2b6cbc8e2a9d910207ab4e2",
+      "description": "Reecho API Key"
+    }
+  }
+}
