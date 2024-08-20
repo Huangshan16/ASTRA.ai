@@ -55,12 +55,6 @@ class Reecho_ttsExtension(Extension):
     def on_data(self, ten_env: TenEnv, data: Data) -> None:
         pass
 
-    def on_audio_frame(self, ten_env: TenEnv, audio_frame: AudioFrame) -> None:
-        pass
-
-    def on_image_frame(self, ten_env: TenEnv, video_frame: VideoFrame) -> None:
-        pass
-
     def generate_tts(self, payload):
         headers = {
             'User-Agent': 'Bearer sk-b71481e4d2b6cbc8e2a9d910207ab4e2',
