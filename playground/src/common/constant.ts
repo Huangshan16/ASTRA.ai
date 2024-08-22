@@ -21,8 +21,8 @@ export const LANGUAGE_OPTIONS: LanguageOptionItem[] = [
 ]
 export const GRAPH_OPTIONS: GraphOptionItem[] = [
   {
-    label: "Voice Agent - OpenAI LLM + Azure TTS",
-    value: "va.openai.azure"
+    label: "Voice Agent - OpenAI LLM + Reecho TTS",
+    value: "va.openai.reecho"
   },
   {
     label: "Voice Agent with Vision - OpenAI LLM + Azure TTS",
