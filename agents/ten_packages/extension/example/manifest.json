@@ -1,0 +1,25 @@
+{
+  "type": "extension",
+  "name": "example",
+  "version": "0.1.0",
+  "dependencies": [
+    {
+      "type": "system",
+      "name": "ten_runtime_python",
+      "version": "0.1.0"
+    }
+  ],
+  "package": {
+    "include": [
+      "manifest.json",
+      "property.json",
+      "BUILD.gn",
+      "**.tent",
+      "**.py",
+      "src/**.tent",
+      "src/**.py",
+      "README.md"
+    ]
+  },
+  "api": {}
+}

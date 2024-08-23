@@ -14,10 +14,10 @@
       "manifest.json",
       "property.json",
       "BUILD.gn",
-      "**.tent",
-      "**.py",
-      "src/**.tent",
-      "src/**.py",
+      "**/*.tent",
+      "**/*.py",
+      "src/**/*.tent",
+      "src/**/*.py",
       "README.md"
     ]
   },
@@ -33,13 +33,13 @@
             "type": "string"
         },
         "randomness": {
-            "type": "int64"
+            "type": "int32"
         },
         "stability_boost": {
-            "type": "int64"
+            "type": "int32"
         },
         "probability_optimization": {
-            "type": "int64"
+            "type": "int32"
         },
         "break_clone": {
             "type": "bool"
@@ -51,7 +51,7 @@
             "type": "bool"
         },
         "seed": {
-            "type": "int64"
+            "type": "int32"
         },
         "api_url": {
             "type": "string"
